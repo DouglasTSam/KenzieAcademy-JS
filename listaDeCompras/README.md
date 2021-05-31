@@ -1,4 +1,4 @@
-# ListaDeCompras-Kenzie
+# Lista de compras - Kenzie Academy
 
 ## Projeto realizado na semana JS da Kenzie Academy.
 
