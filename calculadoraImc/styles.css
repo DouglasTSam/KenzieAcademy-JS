@@ -11,10 +11,11 @@
   flex-direction: column;
   border: 1px solid;
   width: 500px;
-  height: 400px;
+  height: 80%;
   box-shadow:  0 0 30px;
-  border-radius: 5px; 
+  border-radius: 10px; 
   background-image: url("https://i.ibb.co/6mK6hfg/104620698-prmo-imc-br-nc-removebg-preview.png");
+  background-size: cover;
 }
 
 h1{
@@ -28,6 +29,7 @@ h1{
   border-radius: 10px;
   flex-direction : column;
   width:90%;
+  height:45%;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-left: auto;
@@ -50,33 +52,67 @@ h1{
 }
 
 #numericPeso, #numericAltura {
-  display: flex;
   margin-left: 2.5%;
-  width: 23%;
-  height:25%;
+  width: 25%;
+  height:50%;
+  outline:none;
+  border: none;
+  background-color: #f5f5f5;
+  border-radius: 5px;
   margin-bottom: 2%;
   font-size: 24px;
-  border: 1px solid;
-  border-radius:10px;
 }
 
 #botaoCalcular{
-  width: 70%;
-  height: 50px;
-  margin-top: auto;
-  margin-bottom: auto;
+  width:65%;
+  margin-top: 4%;
   align-self: center;
   cursor: pointer;
-  background-color : #0f0f3f;
-  color: white;
+  background-color : #c4c4c4;
+  color: blue;
   font-size: 22px;
-  border: 1px solid black ;
+  border: 1px solid ;
   border-radius: 50px;
+  outline:none;
+  height:10%;
+}
+#botaoCalcular:active{
+  transform: translate(0,2px);
+  }
+
+#containerInputPeso{
+  display:flex;
+  width:100%;
+  flex-direction:column;
 }
 
-#botaoCalcular:hover{
-  color: blue;
-  background-color: #c4c4c4;
-  transition-duration: .1s;
-  box-shadow : 0 0 30px;
-  }
+#containerInputAltura{
+  display:flex;
+    width:100%;
+  flex-direction:column;
+}
+
+#calculadoraFormPeso{
+  display:flex;
+  width:100%;
+  flex-direction:column;
+}
+
+#calculadoraFormAltura{
+  display:flex;
+  width:100%;
+  flex-direction:column;  
+}
+
+#resultado{
+  font-family: "Roboto", sans-serif;
+  text-align:center;
+  text-transform:uppercase;
+}
+
+#mensagemImc{
+  font-family: "Squada One", sans-serif;
+  text-align:center;
+  text-transform:uppercase;
+  transform: translateY(-25px);
+}

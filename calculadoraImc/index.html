@@ -1,32 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,400&family=Squada+One&display=swap" rel="stylesheet">
-<title>Lista de compras - Kenzie Academy - JS</title>
-<link rel="stylesheet" type="text/css" href="styles.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,400&family=Squada+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Calculadora de IMC Online - Kenzie Academy - JS</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
-    <div id = "main">
-      <div id = "blocoCentral">
-    <h1>Calculadora de IMC online</h1>
-      <form id= "formContainer">
-        <div id = "calculadoraFormPeso">
-          <p id="labelPeso">Informe o seu PESO :</p>
-          <input id = "rangePeso" type="range"/>
-          <input id = "numericPeso" type="number"/>
-        </div>
-        <div id= "calculadoraFormAltura">
-          <p id= "labelAltura">Informe a sua ALTURA :</p>
-           <input id= "rangeAltura" type="range"/>
-          <input id = "numericAltura" type="number"/>
-        </div>
-      </form>
-        <input id= "botaoCalcular" type="button" value= "Calcular"/>
-          <div id="resultado"></div>
-        </div>
+    <div id="main">
+      <div id="blocoCentral">
+        <h1>Calculadora de IMC online</h1>
+        <form id="formContainer">
+          <div id="calculadoraFormPeso">
+            <p id="labelPeso">Informe o seu PESO :</p>
+            <div id="containerInputPeso">
+              <div>
+                <input
+                  id="rangePeso"
+                  type="range"
+                  value="0.00"
+                  min="0.00"
+                  max="300.00"
+                  oninput="numericPeso.value=value"
+                  onchange="numericPeso.value=value"
+                />
+              </div>
+              <div>
+                <input
+                  id="numericPeso"
+                  type="number"
+                  placeholder="0.00"
+                  min="0.00"
+                />
+                Kg
+              </div>
+            </div>
+          </div>
+          <div id="calculadoraFormAltura">
+            <div>
+              <p id="labelAltura">Informe a sua ALTURA :</p>
+            </div>
+            <div id="containerInputAltura">
+              <input
+                id="rangeAltura"
+                type="range"
+                value="0.00"
+                min="0.00"
+                max="300.00"
+                oninput="numericAltura.value=value"
+                onchange="numericAltura.value=value"
+              />
+            </div>
+            <div>
+              <input
+                id="numericAltura"
+                type="number"
+                placeholder="0.00"
+                min="0.00"
+              />
+              Cm
+            </div>
+          </div>
+        </form>
+        <input id="botaoCalcular" type="button" value="Calcular" />
+        <p id="resultado"></p>
+        <p id="mensagemImc"></p>
       </div>
-<script type="text/javascript" src="script.js"></script>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
