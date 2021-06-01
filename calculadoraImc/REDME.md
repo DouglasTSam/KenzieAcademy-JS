@@ -13,8 +13,8 @@
    
 ### Apliquei essass funcionalidades extras : 
  - Adicionei background de acordo com o resultado do IMC;
- - O valor do input range(slider) está passando para o input;
- - Criei uma validação, quando o valor for 0;
+ - O valor do input range(slider) está passando para o input type number e vice-versa;
+ - Validação de quando o valor for 0; 
 
 ### Visão Geral:
 ![imagem aplicação](./assets/calculadora.PNG)
