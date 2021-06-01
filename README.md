@@ -7,7 +7,7 @@ Segue as fotos.
 
 ### Link da aplicação calculadora de IMC : 
 
-https://app.netlify.com/sites/pedantic-austin-4701ac/overview
+https://pedantic-austin-4701ac.netlify.app/
 
 ![Visão geral Calculadora IMC](./assets/calculadora.PNG)
 
