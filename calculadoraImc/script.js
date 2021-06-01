@@ -6,10 +6,11 @@ function calculandoImc() {
   let altura = document.getElementById("numericAltura").value / 100;
   let rangeAltura = document.getElementById("rangeAltura").value / 100;
 
-  if (altura !== "" && peso !== "") {
+
+  if (altura !== 0 && peso !== 0) {
     let imc = (peso / (altura * altura)).toFixed(2);
     let imc2 = (rangePeso / (rangeAltura * rangeAltura)).toFixed(2);
-    let mensagem = "";
+      let mensagem = "";
 
     if (imc < 18.5 || imc2 < 18.5) {
       mensagem =
@@ -52,7 +53,10 @@ function calculandoImc() {
     mensagemImc.textContent = `${mensagem}`;
   } else {
     resultado.textContent = "Preencha Todos os campos !!!";
-    numericPeso.textContent = "";
+    numericPeso = "";
+    numericAltura = "";
+    resultado.style.backgroundColor = "white";
+    mensagemImc.textContent= ""; 
   }
 }
 
